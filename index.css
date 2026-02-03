@@ -1,10 +1,13 @@
 :root {
-    --bg-size: 200%
+    --bg-size: 300%
 }
 
 #bg {
     display: block;
     z-index: -1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
     width: var(--bg-size);
     height: var(--bg-size);
     overflow: hidden;
