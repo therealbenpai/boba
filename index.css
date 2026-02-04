@@ -1,13 +1,10 @@
-:root {
-    --bg-size: 300%
-}
-
 #bg {
+    --bg-size: 400%;
     display: block;
     z-index: -1;
     position: absolute;
-    top: -50%;
-    left: -50%;
+    top: calc(var(--bg-size)/2*-1);
+    left: calc(var(--bg-size)/2*-1);
     width: var(--bg-size);
     height: var(--bg-size);
     overflow: hidden;
@@ -39,8 +36,9 @@ a {
 }
 
 #pfp {
-    height: 16em;
-    width: 16em;
+    --size: 16em;
+    height: var(--size);
+    width: var(--size);
     border-radius: 20px;
 }
 
